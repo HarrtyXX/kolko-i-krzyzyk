@@ -1,0 +1,47 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<style>
+
+    h1{
+        line-height: 100%;
+    }
+    body{
+        margin:0;
+    }
+    #board{
+        display: table;
+        padding-top: 10%;
+        margin :auto;
+    }
+    .field{
+        background-color: #333333;
+        float:left;
+        width: 100px;
+        height: 100px;
+        border-style: solid;
+        text-align:center ;
+        color: #ffffff;
+        border-color: #000000;
+    }
+</style>
+<title>kolko i krzyzyk</title>
+<script src="main.js"></script>
+</head>
+
+<body>
+    <div id="board">
+        <div onclick = "main(1)" class = 'field' id='1'></div>
+        <div onclick = "main(2)" class = 'field' id='2'></div>
+        <div onclick = "main(3)" class = 'field' id='3'></div>
+
+        <div onclick = "main(4)" class = 'field' style="clear:both" id='4'></div>
+        <div onclick = "main(5)" class = 'field' id='5'></div>
+        <div onclick = "main(6)" class = 'field' id='6'></div>
+
+        <div onclick = "main(7)" class = 'field' style="clear:both" id='7'></div>
+        <div onclick = "main(8)" class = 'field' id='8'></div>
+        <div onclick = "main(9)" class = 'field' id='9'></div>
+    </div>
+</body>
+</html>
