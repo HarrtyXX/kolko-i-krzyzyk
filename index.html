@@ -2,9 +2,17 @@
 <html>
 <head>
 <style>
-
+    p{
+        display:table;
+        margin:auto;
+    }
+    button{
+        width: 318px;
+        margin :auto;
+    }
     h1{
         line-height: 100%;
+        text-align:center;
     }
     body{
         margin:0;
@@ -20,7 +28,6 @@
         width: 100px;
         height: 100px;
         border-style: solid;
-        text-align:center ;
         color: #ffffff;
         border-color: #000000;
     }
@@ -30,6 +37,7 @@
 </head>
 
 <body>
+    <h1 style="padding-top: 50px;">Kółko i krzyżyk</h1>
     <div id="board">
         <div onclick = "main(1)" class = 'field' id='1'></div>
         <div onclick = "main(2)" class = 'field' id='2'></div>
@@ -43,5 +51,7 @@
         <div onclick = "main(8)" class = 'field' id='8'></div>
         <div onclick = "main(9)" class = 'field' id='9'></div>
     </div>
+    <p style="color: red" id="alert"> </p>
+    <button onclick="reset()" style="display:table">Resetuj planszę!</button>
 </body>
 </html>
